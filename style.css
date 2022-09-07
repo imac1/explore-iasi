@@ -4,4 +4,8 @@
 body {
 	font-size: 14px;
 	background-image: url(/explore-iasi/login/media/Splash-Image\ 2.png);
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
