@@ -1,11 +1,21 @@
+
+/* 1. General  */
+
+:root {
+    --darkpurple: #5E1FE5;
+    --lighterpurple: #8321FF;
+    --darkerpurple: #4E26A3;
+    --lightgray: #E0E2EA;
+    --graybg: #F2F3F4;
+    --textcolor: #3C3C3C;
+    --gray: #8D8D8D;
+    --blue: #2794F9;
+    --green: #66C308;
+}
+
 * {
 	box-sizing: border-box;
 }
 body {
 	font-size: 14px;
-	background-image: url(/explore-iasi/login/media/Splash-Image\ 2.png);
-	background-position: center center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
 }

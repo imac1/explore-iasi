@@ -1,5 +1,0 @@
-De stabolit in css dimenisunile fonturilor si variabilele culorilor in scss.
-de descarcat iconite
-de descarcat fonturile ptr SFPro display si de legat fonturile in html
-de pus id-rui pe iconite si pe ui components
-
