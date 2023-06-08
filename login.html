@@ -1,17 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-		<script type="module" src="script.js"></script> 
-    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 </head>
-<body>
-    
+
+<body class="bg-[url('https://i.ibb.co/XxbVmVn/palatul-culturii.png')]  bg-cover bg-center flex justify-center items-center min-h-screen">
+<div class="absolute inset-0 object-cover object-center pointer-events-none bg-[var(--darkpurple)] opacity-90"></div>
+    <div class="bg-transparent border text-[var(--textcolor)] p-8  shadow-lg rounded-xl max-w-md md:max-w-lg z-10">
+        <div class=" flex flex-col items-center justify-center  ">
+            <img src="https://i.ibb.co/1dBsTZc/Vector-8.png" alt="Vector-8" class="z-10 relative">
+            <div class=" grid grid-cols-3  absolute z-20 ">
+                <!-- Column 1, Row 1 -->
+                <div class=" "><img src="https://www.stiridinlume.ro/wp-content/uploads/2021/01/Catedrala-Mitropolitana-Iasi.jpg" alt="" class="rounded-full w-10 h-10 ring-4 ring-white ml-6 mt-4"></div>
+                <!-- Column 2, Row 1 -->
+                <div class=" "><img src="https://i.ibb.co/D1wp4vb/Screenshot-2023-06-08-at-17-26-57.png" alt="" class="rounded-full w-10 h-10 ring-4 ring-white ml-12 mt-12"></div>
+                <!-- Column 3, Row 1 -->
+                <div class=""><img src="https://planiada.ro/www/uploads/313/171.Palatul_Roznovanu_11.jpg" alt="" class="rounded-full w-12 h-12 ring-4 ring-white ml-14  "></div>
+             
+               
+                <!-- Column 1, Row 2 -->
+                <div class=" "><img src="https://i.ibb.co/XxbVmVn/palatul-culturii.png" alt="" class="rounded-full w-16 h-16 ring-4 ring-white mt-6 ml-6"></div>
+                <!-- Column 2, Row 2 -->
+                <div class=" "></div>
+                <!-- Column 3, Row 2 -->
+                <div class=""><img src="https://planiada.ro/www/uploads/221/169.Casa_Dosoftei_5.jpg" alt="" class="rounded-full w-14 h-14 ring-4 ring-white ml-6 mt-10"></div>
+                
+            </div>
+
+        </div>
+        <div class="flex flex-col text-white">
+            <div class="flex flex-row gap-1">
+                <i class="ri-map-pin-line"></i> 
+                <h5>Discover your</h5>
+                <i class="ri-heart-fill"></i>
+                <h5>city with</h5>
+            </div>
+            <h2 class="text-3xl font-bold">Explore<span class="opacity-50">Iasi</span><span class="ml-2 ">app</span></h2>
+            <form action="" class=" flex flex-col w-full space-y-4 mt-2">
+                <div class="flex flex-row items-center ">
+                <input type="email" name="" id="" placeholder="Your email" class="border border-white bg-violet-500  rounded-md p-2  w-full relative pl-8  placeholder-white  focus:placeholder-transparent">
+                <i class="ri-user-line absolute ml-3"></i>
+                </div>
+                <div class="flex flex-row items-center ">
+                    <input type="password" name="" id="" placeholder="Your password" class="border border-white bg-violet-500  rounded-md p-2  w-full relative pl-8  placeholder-white  focus:placeholder-transparent peer">
+                <i class="ri-key-line ml-3 absolute"></i>
+                <i class="ri-eye-close-line absolute ml-64 peer-focus:invisible"></i>
+                </div>
+<a href="#" class="text-xs font-bold self-end underline">Forgot password?</a>
+            </form>
+            <p class="text-xs text-center pt-4 pb-4">Don’t have an account yet? <a href="#" class=" text-xs font-bold underline">Register here</a></p>
+        </div>
+        <button class="bg-white rounded-md w-full p-3 font-bold text-[var(--darkpurple)] shadow-lg hover:text-[var(--lighterpurple)]">Sign in</button>
+   
+
+           
+
+    </div>
 </body>
+
 </html>
