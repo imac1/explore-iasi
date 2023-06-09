@@ -1,28 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-		<script type="module" src="script.js"></script>
-    <title>Home Page</title>
+
+    <script src="https://cdn.tailwindcss.com/3.3.0" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
 </head>
 
-<body>
-    <section class="main-section">
-        <div class="topbar">topbar</div>
-        <div class="header">header</div>
-        <div class="footer">footer</div>
+<body class="bg-purple-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white text-[#181028]  shadow-lg rounded-xl max-w-sm flex flex-col  items-center justify-center">
+    <div id="carouselExampleCaptions" class="relative " data-te-carousel-init data-te-carousel-slide>
+      <!--Carousel indicators-->
+      <div class="absolute bottom-0 right-4 z-[2]  mb-4 flex list-none justify-center p-0 " data-te-carousel-indicators>
+        <button
+              type="button"
+              data-te-target="#carouselExampleCaptions"
+              data-te-slide-to="0"
+              data-te-carousel-active
+              class="mx-[6px] box-content h-1 w-1 rounded-full flex-initial cursor-pointer  bg-clip-padding outline outline-offset-1 outline-slate-100  opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+        <button
+              type="button"
+              data-te-target="#carouselExampleCaptions"
+              data-te-slide-to="1"
+            class="mx-[6px] box-content h-1 w-1 rounded-full flex-initial cursor-pointer  bg-clip-padding outline outline-offset-1 outline-slate-100  opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 2"></button>
+        <button
+              type="button"
+              data-te-target="#carouselExampleCaptions"
+              data-te-slide-to="2"
+             class="mx-[6px] box-content h-1 w-1 rounded-full flex-initial cursor-pointer  bg-clip-padding outline outline-offset-1 outline-slate-100  opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Slide 3"></button>
+      </div>
     
-    </section>
+      <!--Carousel items-->
+      <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] rounded-t-xl">
+        <!--First item-->
+        <div
+          class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
+          <img
+                src="https://planiada.ro/www/uploads/313/171.Palatul_Roznovanu_11.jpg"
+                class="block w-full "
+              />
+          <div class="absolute inset-x-4 bottom-1  py-1 text-white flex flex-col ">
+            <h5 class="text-sm self-start"><i class="ri-map-pin-line text-xs mr-1"></i>Discover</h5>
+            <h3 class="font-bold text-xl">Palatul Roznovanu</h3>
+            <p class="text-xs">Bd. Stefan Cel Mare nr.5</p>
+          </div>
+    
+        </div>
+        <!--Second item-->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item style="backface-visibility: hidden">
+          <img
+                src="https://planiada.ro/www/uploads/935/164.Biserica_Sf_ntul_Nicolae_Domnesc_1.jpg"
+                class="block w-full " />
+          <div class="absolute inset-x-4 bottom-1  py-1 text-white flex flex-col ">
+            <h5 class="text-sm self-start"><i class="ri-map-pin-line text-xs mr-1"></i>Discover</h5>
+            <h3 class="font-bold text-xl">Biserica Sf. Nicolaie</h3>
+            <p class="text-xs">Bd. Stefan Cel Mare nr.5</p>
+          </div>
+    
+        </div>
+        <!--Third item-->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item style="backface-visibility: hidden">
+          <img
+                src="https://planiada.ro/www/uploads/461/140.Bojdeuca_lui_Ion_Creang_din_Ia_i_1.jpg"
+                class="block w-full "
+              />
+          <div class="absolute inset-x-4 bottom-1  py-1 text-white flex flex-col ">
+            <h5 class="text-sm self-start"><i class="ri-map-pin-line text-xs mr-1"></i>Discover</h5>
+            <h3 class="font-bold text-xl">Bojdeuca lui Creanga</h3>
+            <p class="text-xs">Bd. Stefan Cel Mare nr.5</p>
+          </div>
+    
+        </div>
+      </div>
+    
+    
+    </div>
+    <div class="flex flex-row  items-center justify-center w-full -translate-y-[5px] relative ">
+      <div class="flex flex-row items-center justify-center w-full ">
+        <input type="email" name="" id="" placeholder="Search Location" class="border border-slate-200  rounded-md p-2 relative pl-8   focus:placeholder-transparent w-[80%] peer ">
+        <i class="ri-search-line absolute -ml-[70%] peer-focus:invisible"></i>
+        <i class="ri-equalizer-line absolute ml-[70%]"></i>
+      </div>
+  
+    </div>
 
-
+      
+    </div>
+    
 </body>
 
 </html>
